@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pizzas",
+      "handler": "Pizza.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pizzas/count",
+      "handler": "Pizza.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pizzas/:id",
+      "handler": "Pizza.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pizzas",
+      "handler": "Pizza.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pizzas/:id",
+      "handler": "Pizza.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pizzas/:id",
+      "handler": "Pizza.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
